@@ -11,36 +11,56 @@
 	<div class="card-header text-center">Listado de Alumnos</div>
 	
 	<div class="card-body">
-  <form class="form-row">
-  <div class="col-1"></div>
-     		<div class="col-10">
-     			<div class="form-inline text-center">   
-				  	<input class="form-control my-1 mr-2" type="search" placeholder="Buscar" aria-label="Search">
-				    <button class="btn btn-outline-success my-1 mr-2" type="submit">Buscar</button>
-				    <label class="my-1 mr-2" for="ddlCantReg">Cantidad de Registros </label>
-				    <select id="ddlCantReg" class="form-control my-1 mr-sm-2">
-						 <option selected>Todos</option>
-				       	<option>5</option>
-				       	<option>10</option>
-				       	<option>20</option>
-				       	<option>50</option>
-					</select>
-					
-					<div class="form-inline">
-						<label class="my-1 mr-2" for="ddlCursos">Seleccione un curso </label>
-						<select id="ddlCursos" class="form-control my-1 mr-sm-2" style="flex-grow:4;">
-							 <option selected>Todos</option>
-					       	<option>...</option>
-						</select>
-							
-						<button id="btnFiltrar" type="submit" class="btn btn-primary my-1 mr-2">Filtrar</button>	
+			  			  <form>
+			     		<div class="form-row">
+			     			<div class="col-lg-1"></div>
+				     		<div class="col-lg-3 form-group">
+				     											<label  for="ddlMaterias">Seleccione una materia </label>
+									<select id="ddlMaterias" class="form-control ">
+										 <option selected>Todas</option>
+								       	<option>Laboratorio IV</option>
+									</select>
+				     		</div>
+				     		<div class="col-lg-3 form-group">
+				     											<label  for="ddlSemestres">Seleccione un semestre </label>
+									<select id="ddlSemestres" class="form-control ">
+										 <option selected>Todos</option>
+								       	<option>Primer Semestre</option>
+								       	<option>Segundo Semestre</option>
+									</select>
+				     		</div>
+				     		<div class="col-lg-3 form-group">
+				     		<label  for="ddlAnio">Seleccione un año </label>
+									<select id="ddlAnio" class="form-control " >
+										 <option selected>Todos</option>
+								       	<option>2019</option>
+									</select>
+				     		</div>
+				     		<div class="col-lg-2 form-group " style="padding-top:32px;">
+				     			<button id="btnFiltrar" type="submit" class="btn btn-primary" >Filtrar</button>	
 						
 						<button id="btnAgregar" type="button" data-toggle="modal" data-target="#modalAbm" class="btn btn-primary">Agregar Alumno</button>	
 					</div>	
-				</div>
-     	 </div>   
-     	  <div class="col-1"></div>  				
+				</div> 				
   </form>
+  <hr/>
+  			     		<form class="form-row">
+			     		<div class="col-12">
+			     			<div class="form-inline text-center">   
+							  	<input class="form-control my-1 mr-2" type="search" placeholder="Buscar" aria-label="Search">
+							    <button class="btn btn-outline-success my-1 mr-2" type="submit">Buscar</button>
+							    <label class="my-1 mr-2" for="ddlCantReg">Cantidad de Registros </label>
+							    <select id="ddlCantReg" class="form-control my-1 mr-sm-2">
+									 <option selected>Todos</option>
+							       	<option>5</option>
+							       	<option>10</option>
+							       	<option>20</option>
+							       	<option>50</option>
+								</select>															
+							</div>
+			     	 </div>   				
+			  </form>
+  
 	</div>
 	
 <table id="tblAlumnos" class="table table-striped table-responsive-lg ">

@@ -31,16 +31,16 @@
     <ul class="navbar-nav">    	
 
       <li class="nav-item">
-        <a class="nav-link active" href="AlumnosAdmin.jsp">Alumnos</a>
+        <a class="nav-link active" href="AlumnosAdmin.jsp">Alumnos Admin</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="ProfesoresAdmin.jsp">Profesores</a>
+        <a class="nav-link active" href="ProfesoresAdmin.jsp">Profesores Admin</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link active" href="CursosAdmin.jsp">Cursos</a>
+        <a class="nav-link active" href="CursosAdmin.jsp">Cursos Admin</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link active" href="ReportesAdmin.jsp">Reportes</a>
+        <a class="nav-link active" href="ReportesAdmin.jsp">Reportes Admin</a>
       </li>
             <li class="nav-item">
         <a class="nav-link active" href="Alumnos.jsp">Alumnos</a>

@@ -9,10 +9,42 @@
 
 <div class="card">
 	<div class="card-header text-center">Listado de Alumnos</div>
-		 <div class="card-body">
-			  <form class="form-row">
-			  <div class="col-1"></div>
-			     		<div class="col-10">
+		 <div class="card-body">			
+			  			  <form>
+			     		<div class="form-row">
+			     			<div class="col-lg-1"></div>
+				     		<div class="col-lg-3 form-group">
+				     											<label  for="ddlMaterias">Seleccione una materia </label>
+									<select id="ddlMaterias" class="form-control ">
+										 <option selected>Todas</option>
+								       	<option>Laboratorio IV</option>
+									</select>
+				     		</div>
+				     		<div class="col-lg-3 form-group">
+				     											<label  for="ddlSemestres">Seleccione un semestre </label>
+									<select id="ddlSemestres" class="form-control ">
+										 <option selected>Todos</option>
+								       	<option>Primer Semestre</option>
+								       	<option>Segundo Semestre</option>
+									</select>
+				     		</div>
+				     		<div class="col-lg-3 form-group">
+				     		<label  for="ddlAnio">Seleccione un año </label>
+									<select id="ddlAnio" class="form-control " >
+										 <option selected>Todos</option>
+								       	<option>2019</option>
+									</select>
+				     		</div>
+				     		<div class="col-lg-2 form-group " style="padding-top:32px;">
+				     			<button id="btnFiltrar" type="submit" class="btn btn-primary" >Filtrar</button>										
+								<button id="btnGuardar" type="submit" class="btn btn-primary">Guardar</button>	
+				     		</div>
+
+			     		</div>
+			     		</form>
+			     		<hr/>
+			     		<form class="form-row">
+			     		<div class="col-12">
 			     			<div class="form-inline text-center">   
 							  	<input class="form-control my-1 mr-2" type="search" placeholder="Buscar" aria-label="Search">
 							    <button class="btn btn-outline-success my-1 mr-2" type="submit">Buscar</button>
@@ -23,22 +55,9 @@
 							       	<option>10</option>
 							       	<option>20</option>
 							       	<option>50</option>
-								</select>
-								
-								<div class="form-inline">
-									<label class="my-1 mr-2" for="ddlCursos">Seleccione un curso </label>
-									<select id="ddlCursos" class="form-control my-1 mr-sm-2" style="flex-grow:4;">
-										 <option selected>Todos</option>
-								       	<option>...</option>
-									</select>
-										
-									<button id="btnFiltrar" type="submit" class="btn btn-primary my-1 mr-2">Filtrar</button>	
-									
-									<button id="btnGuardar" type="submit" class="btn btn-primary">Guardar</button>	
-								</div>	
+								</select>															
 							</div>
-			     	 </div>   
-			     	  <div class="col-1"></div>  				
+			     	 </div>   				
 			  </form>
 		 </div>
 		 
@@ -48,7 +67,9 @@
       <th scope="col">Legajo</th>
       <th scope="col">Nombre</th>
       <th scope="col">Apellido</th>
-      <th scope="col">Curso</th>
+      <th scope="col">Materia</th>
+      <th scope="col">Semestre</th>
+      <th scope="col">Año</th>
       <th scope="col">Nota 1</th>
       <th scope="col">Nota 2</th>
       <th scope="col">Recuperatorio 1</th>
@@ -63,6 +84,8 @@
       <td>Pepe</td>
       <td>Reina</td>
       <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
       <td><input type="text" value="8"></td>
       <td><input type="text" value="8"></td>
       <td><input type="text" value="8"></td>
@@ -77,7 +100,26 @@
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
-      <td>Laboratorio IV</td>
+            <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
+      <td><input type="text" value="2"></td>
+      <td><input type="text" value="2"></td>
+            <td><input type="text" value="2"></td>
+      <td><input type="text" value="2"></td>
+      <td>      	<select class="form-control">
+				        <option selected>Libre</option>
+				        <option>Regular</option>
+	    </select></td>
+      
+    </tr>
+        <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+            <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
       <td><input type="text" value="2"></td>
       <td><input type="text" value="2"></td>
             <td><input type="text" value="2"></td>
@@ -93,6 +135,25 @@
       <td>Jacob</td>
       <td>Thornton</td>
       <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
+            <td><input type="text" value="2"> </td>
+      <td><input type="text" value="2"></td>
+            <td><input type="text" value="2"></td>
+      <td><input type="text" value="2"></td>
+      <td>      	<select class="form-control">
+				        <option selected>Libre</option>
+				        <option>Regular</option>
+	    </select></td>
+      
+    </tr>
+        <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+            <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
       <td><input type="text" value="2"></td>
       <td><input type="text" value="2"></td>
             <td><input type="text" value="2"></td>
@@ -107,22 +168,9 @@
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
-      <td>Laboratorio IV</td>
-      <td><input type="text" value="2"> </td>
-      <td><input type="text" value="2"></td>
-            <td><input type="text" value="2"></td>
-      <td><input type="text" value="2"></td>
-      <td>      	<select class="form-control">
-				        <option selected>Libre</option>
-				        <option>Regular</option>
-	    </select></td>
-      
-    </tr>
-        <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>Laboratorio IV</td>
+            <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
       <td><input type="text" value="2"></td>
       <td><input type="text" value="2"></td>
             <td><input type="text" value="2"></td>
@@ -137,22 +185,9 @@
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
-      <td>Laboratorio IV</td>
-      <td><input type="text" value="2"></td>
-      <td><input type="text" value="2"></td>
-            <td><input type="text" value="2"></td>
-      <td><input type="text" value="2"></td>
-      <td>      	<select class="form-control">
-				        <option selected>Libre</option>
-				        <option>Regular</option>
-	    </select></td>
-      
-    </tr>
-        <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>Laboratorio IV</td>
+            <td>Laboratorio IV</td>
+      <td>Segundo Semestre</td>
+      <td>2019</td>
       <td><input type="text" value="2"></td>
       <td><input type="text" value="2"></td>
             <td><input type="text" value="2"></td>
